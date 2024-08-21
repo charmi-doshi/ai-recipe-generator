@@ -4,6 +4,15 @@
   padding: 20px;
   text-align: center;
   
+  margin: 0;
+  
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    backdrop-filter: blur(10px); /* Blur effect on background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+    color: #fff;
+    text-align: center;
 }
 
 .header-container {
@@ -16,15 +25,26 @@
   
   
 }
-
 .main-header {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #1a202c;
+  
+  text-shadow: 
+        2px 2px 0px black, /* Right and down */
+        -2px 2px 0px black, /* Left and down */
+        2px -2px 0px black, /* Right and up */
+        -2px -2px 0px black; /* Left and up */
+  /* color: #1a202c; */
+color :#f5fdfd;
 }
 
 .main-header .highlight {
-  color: #2563eb;
+  color :#fff;
+  text-shadow: 
+        2px 2px 0px black, /* Right and down */
+        -2px 2px 0px black, /* Left and down */
+        2px -2px 0px black, /* Right and up */
+        -2px -2px 0px black; /* Left and up */
 }
 
 @media (min-width: 640px) {
@@ -38,7 +58,16 @@
   font-weight: 500;
   font-size: 1.125rem;
   max-width: 65ch;
-  color: #1a202c;
+  /* color: #1a202c; */
+  
+  text-shadow: 
+        1px 1px 0px black, /* Right and down */
+        -1px 1px 0px black, /* Left and down */
+        1px -1px 0px black, /* Right and up */
+        -1px -1px 0px black; /* Left and up */
+   font-style: italic;
+   /* color :#f5fdfd; */
+   
 }
 
 .form-container {
@@ -50,6 +79,7 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  color: #36333e;
 }
 
 .wide-input {
@@ -65,7 +95,7 @@
   max-width: 300px; /* Set a maximum width for the button */
   padding: 10px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #36333e;
   color: white;
   border: none;
   border-radius: 4px;
@@ -73,7 +103,8 @@
 }
 
 .search-button:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: #36333e;
 }
 
 .result-container {
@@ -96,7 +127,7 @@
   padding: 15px;
   white-space: pre-wrap;
   word-wrap: break-word;
-  color: black;
+  color: #36333e;
   font-weight: bold;
   text-align: left; /* Align text to the left */
 }
