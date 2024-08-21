@@ -1,4 +1,4 @@
-**Web App for Recipe Generation  using Generative AI and AWS Cloud **
+Web App for Recipe Generation  using Generative AI and AWS Cloud
 
 This project involves developing a web application where users can input ingredients, and the application generates unique recipes using a generative AI model. The backend will be hosted on AWS, and the AI model will be trained to generate creative and diverse recipes based on the input ingredients.
 The generative AI model at the heart of this project leverages a fine-tuned GPT architecture to craft unique and personalized recipes. By understanding the relationship between ingredients, cooking methods, and flavor profiles, the model can generate innovative recipes that are both coherent and creative. The model is trained on a diverse dataset of thousands of recipes, ensuring it has a broad understanding of global cuisines and can cater to various dietary preferences.
