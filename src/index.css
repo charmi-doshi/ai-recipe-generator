@@ -14,8 +14,10 @@
   margin: 0 auto;
   padding: 2rem;
   
-  background:url("assets/a.jpg") ;
+  background:url("assets/bor3.jpeg") ;
   background-size: contain;
+
+  background-color: antiquewhite;
   
 
 }
