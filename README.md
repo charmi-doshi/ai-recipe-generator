@@ -1,50 +1,8 @@
-# React + TypeScript + Vite
+**Web App for Recipe Generation  using Generative AI and AWS Cloud **
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project involves developing a web application where users can input ingredients, and the application generates unique recipes using a generative AI model. The backend will be hosted on AWS, and the AI model will be trained to generate creative and diverse recipes based on the input ingredients.
+The generative AI model at the heart of this project leverages a fine-tuned GPT architecture to craft unique and personalized recipes. By understanding the relationship between ingredients, cooking methods, and flavor profiles, the model can generate innovative recipes that are both coherent and creative. The model is trained on a diverse dataset of thousands of recipes, ensuring it has a broad understanding of global cuisines and can cater to various dietary preferences.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+When a user inputs ingredients, the model generates a recipe by predicting the sequence of steps required to create a dish, considering the ingredients provided. The model is capable of producing not only the list of ingredients and instructions but also suggestions for variations and additional tips to enhance the cooking experience.
+This integration of generative AI with AWS's robust infrastructure ensures that the application is scalable, reliable, and capable of delivering real-time recipe generation to users across the globe.
+This project is a comprehensive demonstration of using AWS cloud services to power a generative AI application. It showcases the potential of AI in enhancing everyday tasks, such as cooking, by providing personalized and innovative recipe suggestions based on user preferences.
