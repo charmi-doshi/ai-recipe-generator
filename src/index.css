@@ -13,9 +13,12 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  
+  background:url("assets/a.jpg") ;
+  background-size: contain;
+  
 
 }
-
 .card {
   padding: 2em;
 }
